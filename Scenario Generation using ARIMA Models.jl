@@ -28,7 +28,7 @@ while ω < N_Ω
         # Step 3 : Update the time period counter:
         t = t + 1
         # Step 4 : Randomly generate
-        # rand
+        # ϵ[1:N_T, ω] = rand(N_T,1)
         # Step 5 : Evaluate expression (3.1) to obtain
         if t == 1
             y[t, ω] = sum(φ[j] * y[t-j, 0] for j in 1:p) + ϵ[t, ω] - sum(Θ[j] * ϵ[t-j, 0] for j in 1:q)
