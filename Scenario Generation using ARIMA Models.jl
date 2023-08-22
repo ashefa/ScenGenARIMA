@@ -37,4 +37,4 @@ while ω < N_Ω
         end
     end
 end
-y                  
+y[1:N_T, 1:N_Ω]                  
